@@ -1,7 +1,3 @@
-Um bom README é o que diferencia um projeto de estudo de um projeto profissional. Como você agora é Analista de Machine Learning Júnior na Telecom X, vamos estruturar o texto para refletir essa autoridade técnica.
-
-Aqui está uma sugestão de conteúdo que você pode copiar e colar no seu arquivo README.md. Ele já está organizado para mostrar que você entende o ciclo de vida de um projeto de dados:
-
 📡 Telecom X — Predição de Churn (Parte 2)
 Este repositório contém o desenvolvimento de um modelo preditivo de classificação para identificar antecipadamente clientes com alta probabilidade de evasão (Churn) na operadora Telecom X.
 
