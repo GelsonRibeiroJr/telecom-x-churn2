@@ -67,4 +67,4 @@ A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
 
 ---
 ## 📭 Contato
-Desenvolvido por **Gelson Ribeiro Junior** [LinkedIn](https://www.linkedin.com/in/gelsonribeirojr/) | [GitHub](https://github.com/GelsonRibeiroJr/)
+Desenvolvido por **Gelson Ribeiro Jr** [LinkedIn](https://www.linkedin.com/in/gelsonribeirojr/) | [GitHub](https://github.com/GelsonRibeiroJr/)
