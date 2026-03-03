@@ -66,5 +66,5 @@ A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
 3. Execute o arquivo `TelecomX_Modelo_Preditivo.ipynb`.
 
 ---
-## 🤝 Contato
-Desenvolvido por **Gelson Ribeiro Junior** [LinkedIn]((https://www.linkedin.com/in/gelsonribeirojr/)) | [GitHub]((https://github.com/GelsonRibeiroJr/))
+## 📭 Contato
+Desenvolvido por **Gelson Ribeiro Junior** [LinkedIn](https://www.linkedin.com/in/gelsonribeirojr/) | [GitHub](https://github.com/GelsonRibeiroJr/)
