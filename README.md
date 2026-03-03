@@ -46,7 +46,7 @@ O modelo selecionado foi a **Regressão Logística Balanceada**, priorizando o *
 
 | Modelo SEM Balanceamento | Modelo COM Balanceamento |
 | :---: | :---: |
-| ![Matriz Sem Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(SEM%20Balanceamento).png) | ![Matriz Com Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(COM%20Balanceamento).png)
+| ![Matriz Sem Balanceamento](Imagens/Matriz_Sem_Balanceamento.png) | ![Matriz](Imagens/Matriz_Com_Balanceamento.png)
 
 ## 🔍 Principais Insights
 A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
@@ -55,7 +55,7 @@ A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
 * **🛡️ Fatores de Retenção:** Contratos de longo prazo e tempo de permanência (*Tenure*).
 
 ![Importância das Variáveis](Imagens/Importância%20das%20Variaveis.png)
-![Distribuição de Tenure](Imagens/Distribuição%20de%20Tenure%20por%20Chur...png)
+![Distribuição de Tenure](Imagens/Boxplot_Tenure.png)
 
 ## 💡 Estratégias de Retenção Sugeridas
 1.  **Migração Incentivada:** Converter contratos mensais para anuais.
