@@ -5,15 +5,15 @@ Este repositório contém o desenvolvimento de um modelo preditivo de classifica
 ---
 
 ## 📌 Sumário
-* [Objetivo do Projeto](#objetivo-do-projeto)
-* [Etapas de Desenvolvimento](#etapas-de-desenvolvimento)
-* [Análise de Correlação](#análise-de-correlação)
-* [Performance do Modelo Final](#performance-do-modelo-final)
-* [Principais Insights](#principais-insights)
-* [Estratégias de Retenção Sugeridas](#estratégias-de-retenção-sugeridas)
-* [Como Executar](#como-executar)
+* [Objetivo do Projeto](#objetivo)
+* [Tecnologias Utilizadas](#tecnologias)
+* [Etapas de Desenvolvimento](#etapas)
+* [Análise de Correlação](#correlacao)
+* [Performance do Modelo Final](#performance)
+* [Principais Insights](#insights)
+* [Estratégias de Retenção Sugeridas](#estrategias)
+* [Como Executar](#executar)
 * [Contato](#contato)
-
 ---
 
 ## 🎯 Objetivo do Projeto
