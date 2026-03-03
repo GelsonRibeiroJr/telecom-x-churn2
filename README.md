@@ -61,8 +61,8 @@ A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
 3.  **Qualidade Técnica:** Investigar a satisfação específica dos usuários de Fibra Óptica.
 
 ## 🚀 Como Executar
-1. Clone o repositório.
-2. Certifique-se de ter as bibliotecas instaladas (`pandas`, `seaborn`, `sklearn`).
+1. Clone o repositorio.
+2. Certifique-se de ter as bibliotecas instaladas (`pandas`, `seaborn`, `sklearn`) e o arquivo `dados_tratados.csv`.
 3. Execute o arquivo `TelecomX_Modelo_Preditivo.ipynb`.
 
 ---
