@@ -46,7 +46,7 @@ O modelo selecionado foi a **Regressão Logística Balanceada**, priorizando o *
 
 | Modelo SEM Balanceamento | Modelo COM Balanceamento |
 | :---: | :---: |
-| ![Matriz Sem Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(SEM%20Balanceamento).png) | ![Matriz Com Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(COM%20Balanceamento).png) |
+| ![Matriz Sem Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(SEM%20Balanceamento).png) | ![Matriz Com Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(COM%20Balanceamento).png)
 
 ## 🔍 Principais Insights
 A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
