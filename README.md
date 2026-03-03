@@ -62,7 +62,7 @@ A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
 
 ## 🚀 Como Executar
 1. Clone o repositorio.
-2. Certifique-se de ter as bibliotecas instaladas (`pandas`, `seaborn`, `sklearn`) e o arquivo `dados_tratados.csv`.
+2. Tenha as bibliotecas instaladas (`pandas`, `seaborn`, `sklearn`) e o arquivo `dados_tratados.csv`.
 3. Execute o arquivo `TelecomX_Modelo_Preditivo.ipynb`.
 
 ---
