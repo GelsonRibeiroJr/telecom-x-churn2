@@ -2,51 +2,71 @@
 
 Este repositório contém o desenvolvimento de um modelo preditivo de classificação para identificar antecipadamente clientes com alta probabilidade de evasão (Churn) na operadora Telecom X.
 
+---
+
+## 📌 Sumário
+* [Objetivo do Projeto](#-objetivo-do-projeto)
+* [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+* [Etapas de Desenvolvimento](#-etapas-de-desenvolvimento)
+* [Análise de Correlação](#-análise-de-correlação)
+* [Performance do Modelo Final](#-performance-do-modelo-final)
+* [Principais Insights](#-principais-insights)
+* [Estratégias de Retenção Sugeridas](#-estratégias-de-retenção-sugeridas)
+* [Como Executar](#-como-executar)
+* [Contato](#-contato)
+
+---
+
 ## 🎯 Objetivo do Projeto
-Após o sucesso da análise exploratória inicial, a missão atual foi construir um pipeline robusto de Machine Learning para:
-* **Prever o cancelamento** de serviços antes que ele ocorra.
-* **Identificar variáveis críticas** que influenciam a decisão do cliente de deixar a empresa.
-* **Apoiar a tomada de decisão estratégica** com métricas de desempenho precisas para retenção de receita.
-
-## 🧠 Etapas de Desenvolvimento
-O projeto seguiu as melhores práticas de Ciência de Dados:
-1.  **Pré-processamento:** Limpeza de dados, tratamento de valores nulos e agrupamento de categorias redundantes.
-2.  **Feature Selection:** Análise de correlação (removendo multicolinearidade entre cobranças) e teste estatístico **Qui-Quadrado** para ranking de relevância.
-3.  **Engenharia de Dados:** Aplicação de One-Hot Encoding e Normalização via `StandardScaler`.
-4.  **Modelagem:** Comparação entre **Random Forest** e **Regressão Logística**.
-5.  **Otimização:** Aplicação de balanceamento de classes (`class_weight="balanced"`) para lidar com o desequilíbrio da base (aprox. 26% de Churn).
-
-## 📊 Performance do Modelo Final
-O modelo vencedor foi a **Regressão Logística Balanceada**, escolhida por sua capacidade superior de detecção do evento de interesse (Churn).
-
-| Métrica | Resultado |
-| :--- | :--- |
-| **Recall (Sensibilidade)** | **79%** |
-| **F1-Score (Classe Churn)** | **0.62** |
-| **Acurácia Geral** | **74%** |
-
-O uso do balanceamento permitiu reduzir drasticamente o número de clientes que cancelavam sem serem detectados (Falsos Negativos), caindo de **178 para apenas 80 ocorrências**.
-
-
-## 🔍 Principais Insights (Importância das Variáveis)
-A análise de coeficientes e análises direcionadas (Boxplots) revelou os maiores gatilhos de evasão:
-
-* **⚠️ Fatores de Risco:** Contratos mensais (*Month-to-month*), serviço de Fibra Óptica e faturas mensais elevadas.
-* **🛡️ Fatores de Retenção:** Contratos de longo prazo (1 ou 2 anos) e o tempo de permanência do cliente (*Tenure*). Clientes novos apresentam risco significativamente maior.
-
-
-## 💡 Estratégias de Retenção Sugeridas
-Com base nos resultados, propomos:
-1.  **Migração de Planos:** Campanhas para converter clientes de contratos mensais para anuais.
-2.  **Atenção à Fibra Óptica:** Auditoria de satisfação e qualidade técnica focada nos usuários de fibra.
-3.  **Acompanhamento "Boas-Vindas":** Focar esforços de retenção nos primeiros 6 meses de contrato.
+A missão atual foi construir um pipeline robusto de Machine Learning para prever o cancelamento de serviços antes que ele ocorra, identificando variáveis críticas e apoiando a tomada de decisão estratégica para retenção de receita.
 
 ## 🛠️ Tecnologias Utilizadas
 * **Linguagem:** Python
 * **Bibliotecas:** Pandas, Seaborn, Matplotlib, Scikit-learn
-* **Ambiente:** Google Colab
-* **Versionamento:** GitHub
+* **Ambiente:** Google Colab / Jupyter Notebook
+
+## 🧠 Etapas de Desenvolvimento
+O projeto seguiu as melhores práticas de Ciência de Dados:
+1.  **Pré-processamento:** Limpeza e tratamento de categorias redundantes.
+2.  **Feature Selection:** Remoção de multicolinearidade e teste estatístico **Qui-Quadrado**.
+3.  **Engenharia de Dados:** Aplicação de One-Hot Encoding e Normalização via `StandardScaler`.
+4.  **Modelagem:** Comparação entre **Random Forest** e **Regressão Logística**.
+5.  **Otimização:** Aplicação de balanceamento de classes (`class_weight="balanced"`).
+
+## 📉 Análise de Correlação
+Identificamos a necessidade de remover variáveis como `ChargesDaily` e `ChargesTotal` devido à colinearidade perfeita com as cobranças mensais.
+
+![Matriz de Correlação](Imagens/Matriz%20de%20Correlação%20-%20Variáveis%20Numéricas.png)
+
+## 📊 Performance do Modelo Final
+O modelo selecionado foi a **Regressão Logística Balanceada**, priorizando o **Recall (Sensibilidade)** para capturar o maior número possível de evasões.
+
+* **Recall:** **79%** (identifica quase 8 em cada 10 clientes em churn).
+* **Impacto:** Redução expressiva de Falsos Negativos (de 178 para 80).
+
+| Modelo SEM Balanceamento | Modelo COM Balanceamento |
+| :---: | :---: |
+| ![Matriz Sem Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(SEM%20Balanceamento).png) | ![Matriz Com Balanceamento](Imagens/Matriz%20de%20Confusão%20-%20Regressão%20Logística%20(COM%20Balanceamento).png) |
+
+## 🔍 Principais Insights
+A análise de coeficientes e boxplots revelou os maiores gatilhos de evasão:
+
+* **⚠️ Fatores de Risco:** Contratos mensais, Fibra Óptica e faturas elevadas.
+* **🛡️ Fatores de Retenção:** Contratos de longo prazo e tempo de permanência (*Tenure*).
+
+![Importância das Variáveis](Imagens/Importância%20das%20Variaveis.png)
+![Distribuição de Tenure](Imagens/Distribuição%20de%20Tenure%20por%20Chur...png)
+
+## 💡 Estratégias de Retenção Sugeridas
+1.  **Migração Incentivada:** Converter contratos mensais para anuais.
+2.  **Fidelização Precoce:** Focar no atendimento nos primeiros 6 meses de contrato.
+3.  **Qualidade Técnica:** Investigar a satisfação específica dos usuários de Fibra Óptica.
+
+## 🚀 Como Executar
+1. Clone o repositório.
+2. Certifique-se de ter as bibliotecas instaladas (`pandas`, `seaborn`, `sklearn`).
+3. Execute o arquivo `TelecomX_Modelo_Preditivo.ipynb`.
 
 ---
-### 🤝 Contato
-Desenvolvido por **Gelson Ribeiro Junior** Analista de Dados
+## 🤝 Contato
+Desenvolvido por **Gelson Ribeiro Junior** [LinkedIn]((https://www.linkedin.com/in/gelsonribeirojr/)) | [GitHub]((https://github.com/GelsonRibeiroJr/))
