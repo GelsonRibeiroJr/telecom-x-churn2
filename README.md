@@ -6,7 +6,6 @@ Este repositório contém o desenvolvimento de um modelo preditivo de classifica
 
 ## 📌 Sumário
 * [Objetivo do Projeto](#objetivo)
-* [Tecnologias Utilizadas](#tecnologias)
 * [Etapas de Desenvolvimento](#etapas)
 * [Análise de Correlação](#correlacao)
 * [Performance do Modelo Final](#performance)
